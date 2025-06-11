@@ -1,0 +1,15 @@
+{% if user %}
+  <script>
+    window.location.href = "/dashboard";
+  </script>
+{% else %}
+  <form method="post" action="/_services/auth/signin">
+    <h2>Login</h2>
+    <label>Email</label>
+    <input type="email" name="username" required />
+    <label>Password</label>
+    <input type="password" name="password" required />
+    <input type="hidden" name="returnurl" value="/dashboard" />
+    <button type="submit">Login</button>
+  </form>
+{% endif %}
