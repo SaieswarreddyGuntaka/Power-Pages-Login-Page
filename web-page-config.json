@@ -1,0 +1,9 @@
+{
+  "name": "Login",
+  "website": "Your Portal",
+  "parentPage": "Home",
+  "webTemplate": "Login Web Template",
+  "pageTemplateType": "Web Template",
+  "isPublished": true,
+  "partialUrl": "login"
+}
